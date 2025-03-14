@@ -39,7 +39,7 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/Tejaswini-Chikkamath/<repo>.git'
+                git branch: 'main', url: 'https://github.com/Tejaswini-Chikkamath/PES1UG22CS655_Jenkins.git'
             }
         }
         stage('Install dependencies') {
