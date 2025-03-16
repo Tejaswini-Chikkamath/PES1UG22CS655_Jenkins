@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'gcc:latest'  // Use GCC Docker image with g++ installed
+        }
+    }
     
     stages {
         stage('Checkout') {
