@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                sh 'sudo apt update && sudo apt install -y g++'
+                sh 'apt update && apt install -y g++'
             }
         }
 
